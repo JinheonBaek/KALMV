@@ -1,0 +1,5 @@
+python main.py --data_name NaturalQuestions --data_type ODQA --knowledge_base wiki --model_type flan --model_name_or_path google/flan-t5-base --batch_size 32 --verifier_num_epochs 3 --verifier_batch_size 6 --verifier_sample True --ensemble True --exp_name KALMV_Rectify-0
+python main.py --data_name NaturalQuestions --data_type ODQA --knowledge_base wiki --model_type flan --model_name_or_path google/flan-t5-base --batch_size 32 --verifier_num_epochs 3 --verifier_batch_size 6 --verifier_sample True --ensemble True --edit_output True --num_edits 1 --exp_name KALMV_Rectify-1
+
+python main.py --data_name HotpotQA --data_type ODQA --knowledge_base wiki --model_type flan --model_name_or_path google/flan-t5-base --batch_size 32 --verifier_num_epochs 3 --verifier_batch_size 6 --verifier_sample True --ensemble True --exp_name KALMV_Rectify-0
+python main.py --data_name HotpotQA --data_type ODQA --knowledge_base wiki --model_type flan --model_name_or_path google/flan-t5-base --batch_size 32 --verifier_num_epochs 3 --verifier_batch_size 6 --verifier_sample True --ensemble True --edit_output True --num_edits 1 --exp_name KALMV_Rectify-1
