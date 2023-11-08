@@ -8,6 +8,8 @@ import torch
 from torch.utils.data import Dataset, DataLoader
 
 FOLDER_NAMES = {
+    'WebQuestions': 'webq',
+    'Mintaka': 'mintaka',
     'NaturalQuestions': 'nq_open',
     'HotpotQA': 'hotpot_qa'
 }

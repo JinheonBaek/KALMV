@@ -1,7 +1,10 @@
 # Data / Cache / Results
-datasets/
+datasets/*
 cache/
 results/
+
+!datasets/webq
+!datasets/mintaka
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
