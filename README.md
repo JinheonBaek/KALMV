@@ -24,7 +24,7 @@ $ sh ./scripts/odqa_run.sh
 
 ## Evaluation
 
-The following command line evalulates the **runned experiments (by the above command)** for our KALMV on both NaturalQuestions and HotpotQA datasets.
+The following command line evalulates the **runned experiments** (by the above command) for our KALMV on both NaturalQuestions and HotpotQA datasets.
 ```sh
 $ sh ./scripts/odqa_eval.sh
 ```
