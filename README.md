@@ -19,5 +19,12 @@ $ python ./preprocess/process_odqa.py
 
 The following command line runs the experiments for our KALMV on both NaturalQuestions and HotpotQA datasets. The experiments were conducted on a GPU with at least 24 GB of memory
 ```sh
-$ sh ./scripts/odqa.sh
+$ sh ./scripts/odqa_run.sh
+```
+
+## Evaluation
+
+The following command line evalulates the **runned experiments (by the above command)** for our KALMV on both NaturalQuestions and HotpotQA datasets.
+```sh
+$ sh ./scripts/odqa_eval.sh
 ```

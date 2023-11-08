@@ -224,19 +224,6 @@ class Runner(object):
         with open(f"{self.output_path}/best_results.pkl", "wb") as outfile:
             pickle.dump(best_results, outfile)
 
-        with open(f"{self.output_path}/summary.txt", "a") as outfile:
-            outfile.write("---" * 10 + "\n")
-            outfile.write(f"Global Arguments: {glb_args} \n")
-            outfile.write(f"Dataset Arguments: {data_args} \n")
-            outfile.write(f"Language Model Arguments: {lm_args} \n")
-            outfile.write(f"Retriever Arguments: {ret_args} \n")
-            outfile.write(f"Verifier Arguments: {ver_args} \n")
-            outfile.write(f"Generation Accuracy: {best_results['generation_accuracy']} \n")
-            outfile.write(f"Generation F1: {best_results['generation_f1']} \n")
-            outfile.write(f"Generation EM: {best_results['generation_em']} \n")
-            outfile.write(f"Verification Accuracy: {best_results['verification_accuracy']} \n")
-            outfile.write("---" * 10 + "\n")
-
 if __name__ == "__main__":
 
     parser = HfArgumentParser((GlobalArguments, DataArguments, LanguageModelArguments, RetrieverArguments, VerifierArguments))
