@@ -15,6 +15,8 @@ Run the command below, in order to preprocess the datasets for open-domain quest
 $ python ./preprocess/process_odqa.py
 ```
 
+Note that, for the knowledge-graph question answering datasets (e.g., WebQSP and Mintaka), please download them using the following link: https://1drv.ms/f/s!Aj5JerV8SMDyi-tJ5QOlll_ksf1fRA?e=6HOmI2, and then put them in the dataset folder (e.g., ./datasets/webq for WebQSP or ./datasets/mintaka for Mintaka). 
+
 ## Run
 
 The following command line runs the experiments for our KALMV on both NaturalQuestions and HotpotQA datasets. The experiments were conducted on a GPU with at least 24 GB of memory
